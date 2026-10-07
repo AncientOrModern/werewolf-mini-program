@@ -1,30 +1,18 @@
 <view class="page">
   <view class="intro">角色与阵营</view>
   <view class="section-title">好人阵营</view>
-  <view class="role">
-    <view class="role-name">预言家 · 神职</view>
-    <view class="copy">每晚查验一名玩家的阵营。好人胜利条件：消灭所有狼人。</view>
-  </view>
-  <view class="role">
-    <view class="role-name">女巫 · 神职</view>
-    <view class="copy">持有一瓶解药和一瓶毒药，各只能使用一次；同一夜不能同时使用两瓶药。首夜自救由本局设置决定。</view>
-  </view>
-  <view class="role">
-    <view class="role-name">猎人 · 神职</view>
-    <view class="copy">被狼人袭击或投票放逐时可以开枪带走一人；被毒杀时不能开枪。</view>
-  </view>
-  <view class="role">
-    <view class="role-name">守卫 · 神职</view>
-    <view class="copy">每晚保护一名玩家，不能连续两晚守护同一人。若守卫保护与女巫解药同时作用于同一名受袭玩家，该玩家死亡。</view>
-  </view>
-  <view class="role">
-    <view class="role-name">村民</view>
-    <view class="copy">没有夜间技能，通过讨论和投票协助好人找出狼人。</view>
-  </view>
+  <view class="role"><view class="role-name">预言家 · 神职</view><view class="copy">每晚查验一名玩家的阵营。好人胜利条件：消灭所有狼人。</view></view>
+  <view class="role"><view class="role-name">女巫 · 神职</view><view class="copy">持有一瓶解药和一瓶毒药，各只能使用一次；同一夜不能同时使用两瓶药。首夜自救由本局设置决定。</view></view>
+  <view class="role"><view class="role-name">猎人 · 神职</view><view class="copy">被狼人袭击或投票放逐时可以开枪带走一人；被毒杀时不能开枪。</view></view>
+  <view class="role"><view class="role-name">守卫 · 神职</view><view class="copy">每晚保护一名玩家，不能连续两晚守护同一人。若守卫保护与女巫解药同时作用于同一名受袭玩家，该玩家死亡。</view></view>
+  <view class="role"><view class="role-name">村民</view><view class="copy">没有夜间技能，通过讨论和投票协助好人找出狼人。</view></view>
   <view class="section-title wolf-title">狼人阵营</view>
-  <view class="role">
-    <view class="role-name">狼人</view>
-    <view class="copy">夜间与其他狼人共同选择袭击目标。屠边规则：消灭所有神职角色或所有村民即可获胜。</view>
-  </view>
-  <view class="note">本页介绍角色技能与胜利条件，不包含完整游戏流程，也不会自动判定胜负。</view>
+  <view class="role"><view class="role-name">狼人</view><view class="copy">夜间与其他狼人共同选择袭击目标。屠边规则：消灭所有神职角色或所有村民即可获胜。</view></view>
+  <view class="section-title">警长与发言顺序</view>
+  <view class="role"><view class="role-name">上警与警长</view><view class="copy">主持人可在本局记录警长。第一天发言顺序随机生成；之后有警长时由警长决定顺序。没有警长时，从死亡玩家左右开始；若死亡人数超过两人，则随机安排发言顺序。</view></view>
+  <view class="role"><view class="role-name">主持人控制</view><view class="copy">对局页可手动选择任意座位，并用“上一位”“下一位”推进发言；记录死亡信息后可进入下一天并按规则生成建议顺序。</view></view>
+  <view class="section-title">夜间信息与投票</view>
+  <view class="role"><view class="role-name">夜间记录</view><view class="copy">主持人可按夜记录狼人袭击、守卫保护、女巫解药与毒药、预言家查验及最终死亡玩家。记录仅保存在本局运行内存中。</view></view>
+  <view class="role"><view class="role-name">投票记录</view><view class="copy">主持人可按轮记录每名玩家的投票摘要和被放逐玩家。投票放逐的玩家会标记为死亡，并参与后续发言顺序参考。</view></view>
+  <view class="note">本页介绍角色技能与主持记录规则，不包含完整游戏流程，也不会自动判定胜负。</view>
 </view>

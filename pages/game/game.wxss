@@ -10,6 +10,22 @@ page { background: #f4f6f8; }
 .clock { margin-top: 18rpx; color: #252e34; font-size: 88rpx; font-weight: 700; line-height: 1.1; font-variant-numeric: tabular-nums; }
 .timer-state { margin-top: 6rpx; color: #78838a; font-size: 22rpx; }
 .timer-buttons { display: flex; gap: 12rpx; margin-top: 20rpx; }
+.timer-reset { margin: 14rpx auto 0; padding: 0 24rpx; border: 1rpx solid #d5dddf; border-radius: 6rpx; background: #fff; color: #58656c; font-size: 23rpx; }
+.order-hint { margin-top: 12rpx; color: #236d58; font-size: 22rpx; }
+.order-text { overflow: hidden; margin-top: 8rpx; color: #68747b; font-size: 21rpx; text-overflow: ellipsis; white-space: nowrap; }
+.record-panel { margin-top: 24rpx; padding: 20rpx; border-radius: 8rpx; background: #fff; }
+.panel-title { margin-bottom: 12rpx; font-size: 28rpx; font-weight: 700; }
+.record-row { display: flex; align-items: center; justify-content: space-between; min-height: 72rpx; border-bottom: 1rpx solid #edf0f1; color: #4e5b62; font-size: 24rpx; }
+.record-row:last-of-type { border-bottom: 0; }
+.record-row.stacked { display: block; padding: 12rpx 0; }
+.record-row.stacked .text-input { width: 100%; margin-top: 10rpx; box-sizing: border-box; }
+.picker-value { color: #236d58; }
+.small-input { width: 230rpx; height: 54rpx; box-sizing: border-box; border: 1rpx solid #d3dbdd; border-radius: 5rpx; text-align: right; font-size: 24rpx; }
+.text-input { width: 300rpx; height: 54rpx; box-sizing: border-box; border: 1rpx solid #d3dbdd; border-radius: 5rpx; padding: 0 10rpx; text-align: right; font-size: 23rpx; }
+.record-actions { display: flex; gap: 10rpx; margin-top: 14rpx; }
+.record-actions button { flex: 1; margin: 0; border: 1rpx solid #cbd5d7; border-radius: 5rpx; background: #f7f9f9; color: #3d4d53; font-size: 22rpx; }
+.record-panel .hint { margin-top: 12rpx; color: #778289; font-size: 21rpx; line-height: 1.5; }
+.seat-dead { border-color: #c98e82; background: #fff4f1; }
 .timer-buttons button { flex: 1; margin: 0; border-radius: 6rpx; font-size: 25rpx; }
 .timer-primary { background: #236d58; color: #fff; }
 .timer-secondary { background: #edf1f2; color: #334149; }
