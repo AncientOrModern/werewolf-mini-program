@@ -1,0 +1,2 @@
+# werewolf-mini-program
+
