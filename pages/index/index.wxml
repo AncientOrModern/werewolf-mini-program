@@ -1,0 +1,15 @@
+<view class="page">
+  <view class="brand">狼人杀</view>
+  <view class="subtitle">线下牌局主持工具</view>
+
+  <view class="actions">
+    <button class="primary" bindtap="startGame">开始游戏</button>
+    <button class="secondary" bindtap="openRules">角色规则</button>
+  </view>
+
+  <view wx:if="{{lastConfig}}" class="recent">
+    <view class="recent-title">最近配置</view>
+    <view class="recent-copy">{{lastConfig.playerCount}} 人 · 发言 {{lastConfig.speechSeconds}} 秒</view>
+    <view class="recent-copy">女巫首夜自救：{{lastConfig.witchSelfSave ? '开启' : '关闭'}}</view>
+  </view>
+</view>

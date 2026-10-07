@@ -1,0 +1,9 @@
+page { background: #f4f6f8; }
+.page { padding: 28rpx 30rpx 56rpx; color: #253039; }
+.intro { margin: 12rpx 0 30rpx; font-size: 38rpx; font-weight: 700; }
+.section-title { margin: 28rpx 0 14rpx; color: #236d58; font-size: 28rpx; font-weight: 700; }
+.wolf-title { color: #a64b32; }
+.role { margin-bottom: 14rpx; padding: 22rpx 24rpx; border-left: 5rpx solid #8ba79c; background: #fff; }
+.role-name { margin-bottom: 10rpx; font-size: 29rpx; font-weight: 650; }
+.copy { color: #55616a; font-size: 25rpx; line-height: 1.65; }
+.note { margin-top: 28rpx; color: #737e86; font-size: 23rpx; line-height: 1.5; }

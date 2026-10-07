@@ -1,0 +1,21 @@
+page { background: #f4f6f8; }
+.page { padding: 20rpx 28rpx 60rpx; color: #253039; }
+.section-title { margin: 30rpx 0 14rpx; font-size: 30rpx; font-weight: 700; }
+.row, .role-row, .player-row { display: flex; align-items: center; justify-content: space-between; min-height: 82rpx; padding: 0 20rpx; background: #fff; border-bottom: 1rpx solid #e5e9eb; }
+.count-row { margin-top: 8rpx; border-radius: 8rpx 8rpx 0 0; }
+.picker-value { color: #236d58; }
+.player-row:last-child, .role-row:last-child { border-radius: 0 0 8rpx 8rpx; }
+.player-list { overflow: hidden; border-radius: 8rpx; }
+.seat { width: 100rpx; color: #56636b; }
+.name-input { flex: 1; text-align: right; font-size: 27rpx; }
+.role-row { min-height: 76rpx; }
+.number-input { width: 110rpx; height: 58rpx; box-sizing: border-box; border: 1rpx solid #cbd3d7; border-radius: 6rpx; text-align: center; background: #fff; }
+.hint { margin-top: 12rpx; color: #6b767e; font-size: 23rpx; }
+.switch-row { border-radius: 8rpx; }
+.presets { display: flex; justify-content: space-between; gap: 10rpx; }
+.presets button { flex: 1; margin: 0; padding: 0; font-size: 23rpx; border-radius: 6rpx; background: #fff; color: #34434b; }
+.presets button.selected { background: #236d58; color: #fff; }
+.custom-row { margin-top: 14rpx; border-radius: 8rpx; font-size: 26rpx; }
+.wide { width: 120rpx; }
+.code-input { height: 82rpx; padding: 0 20rpx; border-radius: 8rpx; background: #fff; font-size: 28rpx; }
+.start-button { margin-top: 42rpx; border-radius: 8rpx; background: #236d58; color: #fff; font-size: 30rpx; }

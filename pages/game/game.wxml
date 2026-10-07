@@ -1,0 +1,54 @@
+<view class="page">
+  <view class="topline">
+    <view>
+      <view class="game-title">本局进行中</view>
+      <view class="small-copy">{{seats.length}} 位玩家 · 身份仅在验证后查看</view>
+    </view>
+    <button class="text-button" size="mini" bindtap="endGame">结束</button>
+  </view>
+
+  <view class="timer-panel">
+    <view class="current-label">当前发言</view>
+    <picker mode="selector" range="{{seatOptions}}" bindchange="chooseSpeaker">
+      <view class="speaker">{{currentSpeakerLabel}}　⌄</view>
+    </picker>
+    <view class="clock">{{remainingText}}</view>
+    <view class="timer-state">{{timerRunning ? '计时中' : (timerExpired ? '时间到' : '已暂停')}}</view>
+    <view class="timer-buttons">
+      <button wx:if="{{!timerRunning}}" class="timer-primary" bindtap="startTimer">开始</button>
+      <button wx:else class="timer-primary" bindtap="pauseTimer">暂停</button>
+      <button class="timer-secondary" bindtap="resetTimer">重置</button>
+      <button class="timer-secondary" bindtap="nextSpeaker">下一位</button>
+    </view>
+  </view>
+
+  <view class="seat-heading">身份牌</view>
+  <view class="privacy-hint">{{viewMode ? '身份查看模式已开启；离开前请退出。' : '先验证主持人口令，再选择座位查看身份。'}}</view>
+  <view class="seat-grid">
+    <button wx:for="{{seats}}" wx:key="seat" class="seat-tile {{item.viewed ? 'seat-viewed' : ''}}" data-index="{{index}}" bindtap="openCard">
+      <view class="tile-number">{{item.seat}} 号</view>
+      <view class="tile-name">{{item.name || '玩家' + item.seat}}</view>
+      <view class="tile-status">{{item.viewed ? '已查看' : '未查看'}}</view>
+    </button>
+  </view>
+
+  <view wx:if="{{!viewMode}}" class="unlock-panel">
+    <view class="unlock-title">主持人口令</view>
+    <input class="code-input" type="number" password="true" maxlength="4" placeholder="输入 4 位数字口令" value="{{codeInput}}" bindinput="codeInput" />
+    <button class="unlock-button" bindtap="enterViewMode">验证并查看</button>
+  </view>
+  <button wx:else class="exit-button" bindtap="exitViewMode">退出身份查看模式</button>
+
+  <view class="game-actions">
+    <button class="secondary-action" bindtap="reshuffle">重新洗牌</button>
+  </view>
+
+  <view wx:if="{{activeCard}}" class="overlay" catchtap="closeCard">
+    <view class="identity-modal" catchtap="keepModalOpen">
+      <view class="modal-seat">{{activeCard.seat}} 号玩家</view>
+      <view class="modal-name">{{activeCard.name || '未填写昵称'}}</view>
+      <view class="identity-role">{{activeCard.role}}</view>
+      <button class="unlock-button" bindtap="closeCard">确认并隐藏</button>
+    </view>
+  </view>
+</view>

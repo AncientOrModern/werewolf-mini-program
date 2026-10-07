@@ -1,0 +1,63 @@
+page {
+  background: #f4f6f8;
+}
+
+.page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 120rpx 48rpx 60rpx;
+  color: #20252b;
+}
+
+.brand {
+  font-size: 56rpx;
+  font-weight: 700;
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: 16rpx;
+  color: #68727d;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.actions {
+  margin-top: 100rpx;
+}
+
+button {
+  margin-bottom: 28rpx;
+  border-radius: 8rpx;
+  font-size: 32rpx;
+}
+
+.primary {
+  background: #236d58;
+  color: #fff;
+}
+
+.secondary {
+  border: 1rpx solid #b7c1c7;
+  background: #fff;
+  color: #263238;
+}
+
+.recent {
+  margin-top: 60rpx;
+  padding: 28rpx;
+  border-left: 6rpx solid #d07a43;
+  background: #fff;
+}
+
+.recent-title {
+  margin-bottom: 12rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.recent-copy {
+  margin-top: 8rpx;
+  color: #68727d;
+  font-size: 25rpx;
+}

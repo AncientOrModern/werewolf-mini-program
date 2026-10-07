@@ -1,0 +1,34 @@
+page { background: #f4f6f8; }
+.page { padding: 20rpx 26rpx 60rpx; color: #253039; }
+.topline { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20rpx; }
+.game-title { font-size: 34rpx; font-weight: 700; }
+.small-copy, .privacy-hint { margin-top: 8rpx; color: #707b82; font-size: 23rpx; }
+.text-button { margin: 0; padding: 0 18rpx; border: 1rpx solid #c9d0d4; background: #fff; color: #48545b; }
+.timer-panel { padding: 26rpx 22rpx 22rpx; border-radius: 8rpx; background: #fff; text-align: center; }
+.current-label { color: #68747b; font-size: 24rpx; }
+.speaker { margin-top: 8rpx; color: #236d58; font-size: 30rpx; font-weight: 650; }
+.clock { margin-top: 18rpx; color: #252e34; font-size: 88rpx; font-weight: 700; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.timer-state { margin-top: 6rpx; color: #78838a; font-size: 22rpx; }
+.timer-buttons { display: flex; gap: 12rpx; margin-top: 20rpx; }
+.timer-buttons button { flex: 1; margin: 0; border-radius: 6rpx; font-size: 25rpx; }
+.timer-primary { background: #236d58; color: #fff; }
+.timer-secondary { background: #edf1f2; color: #334149; }
+.seat-heading { margin-top: 28rpx; font-size: 29rpx; font-weight: 700; }
+.seat-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12rpx; margin-top: 16rpx; }
+.seat-tile { min-width: 0; height: 126rpx; margin: 0; padding: 14rpx 6rpx; border: 1rpx solid #dbe1e3; border-radius: 6rpx; background: #fff; line-height: 1.35; }
+.seat-viewed { border-color: #d5a276; background: #fff8f1; }
+.tile-number { font-size: 27rpx; font-weight: 650; }
+.tile-name { overflow: hidden; margin-top: 5rpx; color: #58646b; font-size: 22rpx; text-overflow: ellipsis; white-space: nowrap; }
+.tile-status { margin-top: 6rpx; color: #78838a; font-size: 20rpx; }
+.unlock-panel { margin-top: 26rpx; padding: 22rpx; border-radius: 8rpx; background: #fff; }
+.unlock-title { margin-bottom: 14rpx; font-size: 27rpx; font-weight: 650; }
+.code-input { height: 78rpx; padding: 0 18rpx; border: 1rpx solid #d6dddf; border-radius: 6rpx; font-size: 26rpx; }
+.unlock-button, .exit-button { margin: 16rpx 0 0; border-radius: 6rpx; background: #236d58; color: #fff; font-size: 27rpx; }
+.exit-button { width: 100%; margin-top: 24rpx; }
+.game-actions { margin-top: 24rpx; }
+.secondary-action { border: 1rpx solid #bdc7ca; border-radius: 6rpx; background: #fff; color: #334149; font-size: 26rpx; }
+.overlay { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 10; display: flex; align-items: center; justify-content: center; padding: 48rpx; background: rgba(16, 25, 29, .6); }
+.identity-modal { width: 100%; box-sizing: border-box; padding: 38rpx 28rpx 28rpx; border-radius: 8rpx; background: #fff; text-align: center; }
+.modal-seat { color: #68747b; font-size: 26rpx; }
+.modal-name { margin-top: 10rpx; font-size: 29rpx; }
+.identity-role { margin: 36rpx 0; color: #a64b32; font-size: 48rpx; font-weight: 700; }

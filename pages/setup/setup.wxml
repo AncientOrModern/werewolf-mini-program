@@ -1,0 +1,40 @@
+<view class="page">
+  <view class="section-title">玩家设置</view>
+  <view class="row count-row">
+    <text>玩家人数</text>
+    <picker mode="selector" range="{{playerCountOptions}}" bindchange="changePlayerCount">
+      <view class="picker-value">{{playerCount}} 人　›</view>
+    </picker>
+  </view>
+  <view class="player-list">
+    <view wx:for="{{players}}" wx:key="seat" class="player-row">
+      <text class="seat">{{item.seat}} 号</text>
+      <input class="name-input" maxlength="12" placeholder="昵称（可留空）" value="{{item.name}}" data-index="{{index}}" bindinput="changeName" />
+    </view>
+  </view>
+
+  <view class="section-title">角色配置</view>
+  <view wx:for="{{roles}}" wx:key="key" class="role-row">
+    <text>{{item.name}}</text>
+    <input class="number-input" type="number" value="{{item.count}}" data-index="{{index}}" bindinput="changeRoleCount" />
+  </view>
+  <view class="hint">角色数量总和必须等于玩家人数，并至少包含一名狼人。</view>
+
+  <view class="section-title">本局设置</view>
+  <view class="row switch-row">
+    <text>女巫首夜可以自救</text>
+    <switch checked="{{witchSelfSave}}" color="#236d58" bindchange="toggleSelfSave" />
+  </view>
+  <view class="section-title">发言时长</view>
+  <view class="presets">
+    <button wx:for="{{presets}}" wx:key="*this" size="mini" class="{{speechSeconds === item ? 'selected' : ''}}" data-seconds="{{item}}" bindtap="choosePreset">{{item}} 秒</button>
+  </view>
+  <view class="row custom-row">
+    <text>自定义（10–600 秒）</text>
+    <input class="number-input wide" type="number" placeholder="秒" value="{{customSeconds}}" bindinput="customTimeInput" />
+  </view>
+  <view class="section-title">主持人口令</view>
+  <input class="code-input" type="number" password="true" maxlength="4" placeholder="设置 4 位数字口令，不会保存" value="{{hostCode}}" bindinput="hostCodeInput" />
+
+  <button class="start-button" bindtap="startGame">洗牌并开始</button>
+</view>
